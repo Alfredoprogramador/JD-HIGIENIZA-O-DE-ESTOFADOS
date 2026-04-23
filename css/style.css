@@ -94,7 +94,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(201, 181, 160, 0.92) 0%, rgba(212, 196, 176, 0.90) 100%),
+    background: linear-gradient(135deg, rgba(255, 251, 245, 0.45) 0%, rgba(255, 253, 248, 0.40) 100%),
                 url('../images/hero-sofa.jpg');
     background-size: cover;
     background-position: center;
@@ -575,7 +575,7 @@ section.animate-in {
     }
 }
 
-/* Botão WhatsApp Flutuante com Efeitos Especiais */
+/* Botï¿½o WhatsApp Flutuante com Efeitos Especiais */
 .whatsapp-float {
     position: fixed;
     width: 70px;
