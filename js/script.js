@@ -80,15 +80,15 @@ if (formContato) {
 
         // Mensagem de WhatsApp (alternativa)
         const mensagemWhatsApp = `Olá! Meu nome é ${nome}.\n\nEmail: ${email}\nTelefone: ${telefone}\n\nMensagem: ${mensagem}`;
-        const numeroWhatsApp = '5500000000000'; // Substitua pelo número real
+        const numeroWhatsApp = '5519971343769'; // Número da imagem
         const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemWhatsApp)}`;
 
         // Simular envio
         alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
         formContato.reset();
 
-        // Descomentar para abrir WhatsApp
-        // window.open(urlWhatsApp, '_blank');
+        // Abrir WhatsApp
+        window.open(urlWhatsApp, '_blank');
     });
 }
 
