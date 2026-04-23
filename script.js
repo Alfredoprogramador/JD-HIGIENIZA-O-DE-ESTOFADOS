@@ -97,22 +97,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!img) return;
 
       const overlay = document.createElement('div');
-      overlay.style.cssText = `
-        position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:9999;
-        display:flex;align-items:center;justify-content:center;cursor:pointer;
-        animation:fadeInLb 0.25s ease;
-      `;
-
-      const style = document.createElement('style');
-      style.textContent = '@keyframes fadeInLb{from{opacity:0}to{opacity:1}}';
-      document.head.appendChild(style);
+      overlay.classList.add('lightbox-overlay');
 
       const image = document.createElement('img');
       image.src = img.src;
-      image.style.cssText = `
-        max-width:90vw;max-height:85vh;object-fit:contain;
-        border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,0.6);
-      `;
+      image.alt = img.alt;
 
       overlay.appendChild(image);
       document.body.appendChild(overlay);
